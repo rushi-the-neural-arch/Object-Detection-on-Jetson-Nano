@@ -126,3 +126,10 @@ After that
 	https://thenewstack.io/tutorial-configure-nvidia-jetson-nano-as-an-ai-testbed/ 
 
 
+
+NOTE : This repo contains information for Object Detection using YOLO on Jetson Nano
+
+Details regarding Custom Object Detection will be added shortly
+
+I used the open source tool LabelImg to make this process easier. You can download it from       		https://tzutalin.github.io/labelImg/.
+
