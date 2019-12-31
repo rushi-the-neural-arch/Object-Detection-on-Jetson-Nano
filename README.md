@@ -30,7 +30,7 @@ Step 1:  Download and flash the .img file to your micro-SD card
 Step 2:  Installing system packages and prerequisites
 
              sudo apt-get install git cmake
-	 sudo apt-get install libatlas-base-dev gfortran
+	     sudo apt-get install libatlas-base-dev gfortran
              sudo apt-get install libhdf5-serial-dev hdf5-tools
              sudo apt-get install python3-dev
 
@@ -43,18 +43,18 @@ Step 3: Configure your Python Environment
 	rm get-pip.py
 
 
-	Install Virtualenv wrapper
+Install Virtualenv wrapper
 
 	sudo pip install virtualenv virtualenvwrapper
 
 	
-	Once we’ve installed virtualenv and virtualenvwrapper we need to update our      ~/.bashrc file. I’m choosing to use nano but you can use whatever editor you are most comfortable with
+Once we’ve installed virtualenv and virtualenvwrapper we need to update our      ~/.bashrc file. I’m choosing to use nano but you can use whatever editor you are most comfortable with
 
 
 	nano ~/.bashrc
 
 
-	Scroll down to the bottom of the ~/.bashrc file and add the following lines:
+Scroll down to the bottom of the ~/.bashrc file and add the following lines:
 
 
 	# virtualenv and virtualenvwrapper
@@ -64,7 +64,7 @@ Step 3: Configure your Python Environment
 
 
 
-	Next, we need to reload the contents of the ~/.bashrc file using the source command:
+Next, we need to reload the contents of the ~/.bashrc file using the source command:
 
 
 	source ~/.bashrc
@@ -74,12 +74,9 @@ Step 4: Installing TensorFlow and Keras on the NVIDIA Jetson Nano
 
 
 	workon obj_det
+	pip install numpy 
 
-          pip install numpy 
-
-
-
-          You can install the official Jetson Nano TensorFlow by using the following command:
+You can install the official Jetson Nano TensorFlow by using the following command:
 
 
 
@@ -96,23 +93,23 @@ Step 5: Compiling and installing Jetson Inference on the Nano
 
 The first step is to clone down the jetson-inference repo:
 
-$ git clone https://github.com/dusty-nv/jetson-inference
-$ cd jetson-inference
-$ git submodule update —init
+    git clone https://github.com/dusty-nv/jetson-inference
+    cd jetson-inference
+    git submodule update —init
 
 
 We can then configure the build using cmake.
 
 
-mkdir build
-cd build
-cmake ..
+     mkdir build
+     cd build
+     cmake ..
 
 
 After that
 
-make
-sudo make install
+    make
+    sudo make install
 
 
 
@@ -122,7 +119,7 @@ sudo make install
 
  ( Use Swap Space)
 
-https://pysource.com/2019/08/26/install-opencv-4-1-on-nvidia-jetson-nano/ 
+     https://pysource.com/2019/08/26/install-opencv-4-1-on-nvidia-jetson-nano/ 
 
 		OR 
 
