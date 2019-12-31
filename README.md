@@ -1,7 +1,10 @@
 # Object-Detection-on-Jetson-Nano
 Building YOLO V2/V3 Object Detection on Jetson Nano
 
+NOTE : Before choosing whether to use YOLO V2 or V3 note the results
 
+YOLO V2 runs at around 18-20 FPS on live stream whereas
+YOLO V3 runs at 2 FPS			 Choose Wisely :)
 
 Reference Links :
 
