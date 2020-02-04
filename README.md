@@ -32,10 +32,10 @@ Step 1:  Download and flash the .img file to your micro-SD card
 
 Step 2:  Installing system packages and prerequisites
 
-        sudo apt-get install git cmake
+  	sudo apt-get install git cmake
 	sudo apt-get install libatlas-base-dev gfortran
-        sudo apt-get install libhdf5-serial-dev hdf5-tools
-        sudo apt-get install python3-dev
+   	sudo apt-get install libhdf5-serial-dev hdf5-tools
+   	sudo apt-get install python3-dev
 
 
 Step 3: Configure your Python Environment
